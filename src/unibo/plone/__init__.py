@@ -2,6 +2,7 @@
 """Init and utils."""
 import logging
 from unibo.plone import indexing
+from unibo.plone import noacquisition
 from zope.i18nmessageid import MessageFactory
 
 
@@ -10,3 +11,5 @@ logger = logging.getLogger(__name__)
 
 # TODO: collective.monkeypatcher
 indexing.apply_patches()
+noacquisition.apply_patches()
+
