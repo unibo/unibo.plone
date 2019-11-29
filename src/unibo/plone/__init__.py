@@ -12,4 +12,3 @@ logger = logging.getLogger(__name__)
 # TODO: collective.monkeypatcher
 indexing.apply_patches()
 noacquisition.apply_patches()
-
