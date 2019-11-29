@@ -11,7 +11,8 @@ Tell me what your product does
 Features
 --------
 
-- Can be bullet points
+- Monkey patch to ... avoid indexing object with same name as index or metadata fields
+  see: https://community.plone.org/t/wrong-indexing-content/6025
 
 
 Examples
