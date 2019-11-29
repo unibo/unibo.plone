@@ -11,8 +11,8 @@ Tell me what your product does
 Features
 --------
 
-- Monkey patch to `Catalog.safe_callable` avoid indexing object with same name as index or metadata fields
-  see: https://community.plone.org/t/wrong-indexing-content/6025
+- Monkey patch to `Catalog.safe_callable` avoid indexing object with the same name as index or metadata fields.
+  (refs. https://community.plone.org/t/wrong-indexing-content/6025).
 - Requires `experimental.noacquisition` and set `DRY_RUN` to `False`.
 - Requires `collective.purgebyid`.
 
