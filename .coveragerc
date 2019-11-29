@@ -1,0 +1,6 @@
+[report]
+include =
+    src/unibo/*
+omit =
+    */test*
+    */upgrades/*
