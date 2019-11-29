@@ -11,9 +11,10 @@ Tell me what your product does
 Features
 --------
 
-- Monkey patch to ... avoid indexing object with same name as index or metadata fields
+- Monkey patch to `Catalog.safe_callable` avoid indexing object with same name as index or metadata fields
   see: https://community.plone.org/t/wrong-indexing-content/6025
-
+- Requires `experimental.noacquisition` and set `DRY_RUN` to `False`.
+- Requires `collective.purgebyid`.
 
 Examples
 --------
@@ -26,14 +27,6 @@ Documentation
 -------------
 
 Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
 
 
 Installation
@@ -58,13 +51,6 @@ Contribute
 - Issue Tracker: https://github.com/collective/unibo.plone/issues
 - Source Code: https://github.com/collective/unibo.plone
 - Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
