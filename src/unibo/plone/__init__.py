@@ -9,4 +9,4 @@ _ = MessageFactory('unibo.plone')
 logger = logging.getLogger(__name__)
 
 # TODO: collective.monkeypatcher
-indexing.apply_patches(logger)
+indexing.apply_patches()
