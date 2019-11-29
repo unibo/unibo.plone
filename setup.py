@@ -36,8 +36,8 @@ setup(
     url='https://github.com/collective/unibo.plone',
     project_urls={
         'PyPI': 'https://pypi.python.org/pypi/unibo.plone',
-        'Source': 'https://github.com/collective/unibo.plone',
-        'Tracker': 'https://github.com/collective/unibo.plone/issues',
+        'Source': 'https://github.com/unibo/unibo.plone',
+        'Tracker': 'https://github.com/unibo/unibo.plone/issues',
         # 'Documentation': 'https://unibo.plone.readthedocs.io/en/latest/',
     },
     license='GPL version 2',
@@ -50,10 +50,12 @@ setup(
     install_requires=[
         'setuptools',
         # -*- Extra requirements: -*-
-        'z3c.jbot',
-        'plone.api>=1.8.4',
-        'plone.restapi',
-        'plone.app.dexterity',
+        # 'z3c.jbot',
+        # 'plone.api>=1.8.4',
+        # 'plone.restapi',
+        # 'plone.app.dexterity',
+        'experimental.noacquisition',
+        'collective.purgebyid',
     ],
     extras_require={
         'test': [
@@ -69,7 +71,5 @@ setup(
     entry_points="""
     [z3c.autoinclude.plugin]
     target = plone
-    [console_scripts]
-    update_locale = unibo.plone.locales.update:update_locale
     """,
 )
