@@ -19,11 +19,12 @@ class UniboPloneLayer(PloneSandboxLayer):
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
         import plone.restapi
+
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=unibo.plone)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'unibo.plone:default')
+        applyProfile(portal, "unibo.plone:default")
 
 
 UNIBO_PLONE_FIXTURE = UniboPloneLayer()
@@ -31,13 +32,13 @@ UNIBO_PLONE_FIXTURE = UniboPloneLayer()
 
 UNIBO_PLONE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(UNIBO_PLONE_FIXTURE,),
-    name='UniboPloneLayer:IntegrationTesting',
+    name="UniboPloneLayer:IntegrationTesting",
 )
 
 
 UNIBO_PLONE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(UNIBO_PLONE_FIXTURE,),
-    name='UniboPloneLayer:FunctionalTesting',
+    name="UniboPloneLayer:FunctionalTesting",
 )
 
 
@@ -47,5 +48,5 @@ UNIBO_PLONE_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='UniboPloneLayer:AcceptanceTesting',
+    name="UniboPloneLayer:AcceptanceTesting",
 )
