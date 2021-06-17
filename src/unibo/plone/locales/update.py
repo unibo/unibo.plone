@@ -2,7 +2,7 @@
 
 import os
 import pkg_resources
-import subprocess
+import subprocess  # nosec
 
 
 domain = "unibo.plone"
@@ -34,7 +34,7 @@ def locale_folder_setup():
             )
             subprocess.call(
                 cmd,
-                shell=True,
+                shell=True,  # nosec
             )
 
     os.chdir("../../../../")
@@ -50,7 +50,7 @@ def _rebuild():
     )
     subprocess.call(
         cmd,
-        shell=True,
+        shell=True,  # nosec
     )
 
 
@@ -64,7 +64,7 @@ def _sync():
     )
     subprocess.call(
         cmd,
-        shell=True,
+        shell=True,  # nosec
     )
 
 
