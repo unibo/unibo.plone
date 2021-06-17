@@ -13,7 +13,8 @@ jobs:
       uses: ioggstream/bandit-report-artifacts@v0.0.2
       with:
         project_path: src
-        ignore_failure: true
+        ignore_failure: false
+        config_file: .github/bandit/config.ini
 
     # This is optional
     - name: Security check report artifacts
