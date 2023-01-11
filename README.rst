@@ -6,7 +6,6 @@
 unibo.plone
 ===========
 
-Tell me what your product does
 
 Features
 --------
